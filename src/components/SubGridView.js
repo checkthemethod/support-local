@@ -31,14 +31,14 @@ const SubGridView = ({ restaurantItems, searchTerm, currentFilter }) => (
               )}
 
               <p>{x.service}</p>
-              {x.instagram === "" || x.instagram == undefined ? (
+              {x.instagram === "" || x.instagram === undefined ? (
                 <></>
               ) : (
                 <p>
                   <i className="fab fa-instagram"></i>: {x.instagram}
                 </p>
               )}
-              {x.phone === '' ||  x.phone == undefined ? (<></>):(
+              {x.phone === '' ||  x.phone === undefined ? (<></>):(
               <p>
                 <i className="fa fa-phone"></i>:{x.phone}
               </p>)}
