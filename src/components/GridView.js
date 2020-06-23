@@ -24,10 +24,10 @@ const GridView = ({
 
                      return (
                        <div key={i} className="col-md-4">
-                         <Link to={`/${currentFilter}/${urlify(element)}`}>
-                           <div className="card mb-4">
+                         <Link to={`/${currentFilter}/${element}`}>
+                           <div className="card mb-4 ">
                              <div className="card-body">
-                               <h5 className="card-title">{element}</h5>
+                               <h4 className="card-title">{element}</h4>
                                <p className="card-text">
                                  {numItems.length} locations
                                </p>
