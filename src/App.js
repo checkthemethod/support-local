@@ -8,7 +8,7 @@ import DetailView from "./components/DetailView";
 
 import {
   BrowserRouter as Router,
-  Route, Link, Redirect
+  Route, Link
  } from 'react-router-dom';
 
 
