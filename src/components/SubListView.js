@@ -16,7 +16,7 @@ class SubListView extends React.Component {
     const currentCategory = props.match.params.category;
     const currentFilter = props.currentFilter;
     let filtered = restaurantData.filter(
-      (x) => !x[currentFilter] || urlify(x[currentFilter]) === urlify(currentCategory)
+      (x) => x[currentFilter] && x[currentFilter].indexOf(currentCategory) > -1
     );
 
     this.state = {
@@ -76,11 +76,12 @@ class SubListView extends React.Component {
           </div>
         </div>
 
-        <div className="row p-4">
+        <div className="row pl-4 pb-0">
           <div className="col-md-12">
             <h5>
               {toCapitalize(this.state.currentFilter)}:{" "}
-              {toCapitalize(this.state.filterID.replace(/-/, " "))}
+
+              {toCapitalize(this.state.filterID)}
             </h5>
           </div>
         </div>
