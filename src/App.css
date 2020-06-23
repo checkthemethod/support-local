@@ -1,16 +1,56 @@
 
+/*
+  color palette:
+  https://coolors.co/362517-462c19-623e27-826957-cfaa90
+*/
 body {
-  font-family: Helvetica;
-  color: #C49B6C;
-}
-.App {
-  color: #C49B6C;
+  color: #362517;
+  font-size: 24px;
+  font-family: moret, serif;
+font-weight: 400;
+font-style: normal;
+  font-weight: 400;
+  background-color: #cfaa90;
+  font-size: 16px;
 }
 
+p {
+  font-family: ff-good-web-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: blenny, sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: #362517;
+}
+
+
+header a:hover {
+  text-decoration: none;
+}
 a {
-    color: #282c34;
+  color: #362517;
+  text-decoration: none;
+}
+.card a {
+  color: white;
+}
+a:hover {
+  color:  #826957;
+  //text-decoration: none;
 }
 
+.badge {
+  font-weight: 700;
+  font-size: 12px;
+}
+.badge-primary {
+  background-color: #623e27 !important;
+}
 .btn-secondary {
   background-color: #988986;
 }
@@ -50,9 +90,22 @@ a {
   }
 }
 
+h4, h5 {
+
+  font-family: moret, serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .card {
-  background-color: #C9ADA6;
+
+  font-family: ff-good-web-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #462C19;
   min-height: 12rem;
+  color:  white;
+  border: 2px solid #462C19;
+  box-shadow: 6px 6px 1px #826957;
 }
 
 .heart {
