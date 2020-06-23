@@ -3,7 +3,7 @@ const toCapitalize = (word) => (
 )
 
 const urlify = (word) => (
-  word.toLowerCase().replace(/ /, '-')
+  word.toLowerCase().replace(/ /g, '-').replace(/,/g, '')
 )
 
 export {
