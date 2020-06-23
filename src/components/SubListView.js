@@ -1,6 +1,6 @@
 import React from "react";
 import {restaurantData} from '../data'
-import { toCapitalize, urlify } from "../helpers";
+import { toCapitalize } from "../helpers";
 import SubGridView from "./SubGridView";
 import SubTableView from "./SubTableView";
 import ButtonGroup from "./ButtonGroup";

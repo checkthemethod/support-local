@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {urlify} from '../helpers'
 
 const TableView = ({restaurantItems, searchTerm, restaurantData, currentFilter}) => (<table className="table table-striped">
   <thead>
