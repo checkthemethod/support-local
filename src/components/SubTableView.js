@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SubTableView = ({
   restaurantItems,
@@ -24,25 +25,38 @@ const SubTableView = ({
         </tr>
       </thead>
       <tbody>
-        {restaurantItems.filter((restaurantItem) => {
-
-          console.log(restaurantItem)
-          return restaurantItem.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1})
-           .map((restaurant) => (
-          <tr>
-            <td className="text-nowrap">{restaurant.title}</td>
-            <td className="text-nowrap">{restaurant.neighborhood}</td>
-            <td className="text-nowrap">{restaurant.address}</td>
-            <td className="text-nowrap">{restaurant.cuisine}</td>
-            <td className="text-nowrap">{restaurant.service}</td>
-            <td className="text-nowrap">{restaurant.instagram}</td>
-            <td className="text-nowrap">{restaurant.phone}</td>
-            <td className="text-nowrap">{restaurant.website}</td>
-            {/* <td className="text-nowrap">{restaurant.merch}</td>
+        {restaurantItems
+          .filter((restaurantItem) => {
+            console.log(restaurantItem);
+            return (
+              restaurantItem.title
+                .toLowerCase()
+                .indexOf(searchTerm.toLowerCase()) > -1
+            );
+          })
+          .map((restaurant) => (
+            <tr>
+              <td className="text-nowrap">
+                <a
+                  href={restaurant.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {restaurant.title}
+                </a>
+              </td>
+              <td className="text-nowrap">{restaurant.neighborhood}</td>
+              <td className="text-nowrap">{restaurant.address}</td>
+              <td className="text-nowrap">{restaurant.cuisine}</td>
+              <td className="text-nowrap">{restaurant.service}</td>
+              <td className="text-nowrap">{restaurant.instagram}</td>
+              <td className="text-nowrap">{restaurant.phone}</td>
+              <td className="text-nowrap">{restaurant.website}</td>
+              {/* <td className="text-nowrap">{restaurant.merch}</td>
             <td className="text-nowrap">{restaurant.gift_card}</td>
             <td className="text-nowrap">{restaurant.other}</td> */}
-          </tr>
-        ))}
+            </tr>
+          ))}
       </tbody>
     </table>
   </div>
