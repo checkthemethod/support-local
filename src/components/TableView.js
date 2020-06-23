@@ -26,7 +26,7 @@ const TableView = ({restaurantItems, searchTerm, restaurantData, currentFilter})
                    return (
                      <tr key={i}>
                        <td>
-                         <Link to={`/${currentFilter}/${urlify(element)}`}>
+                         <Link to={`/${currentFilter}/${element}`}>
                            {element}
                          </Link>
                        </td>
