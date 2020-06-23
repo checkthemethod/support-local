@@ -7,14 +7,14 @@ const ButtonGroup = ({ toggleView }) => (
       className="btn btn-secondary"
       onClick={() => toggleView("list")}
     >
-      <i className="far fa-list"></i>
+      <i className="far fa-list mr-2"></i>{"  "}List
     </button>
     <button
       type="button"
       className="btn btn-secondary"
       onClick={() => toggleView("grid")}
     >
-      <i className="fa fa-th"></i>
+      <i className="fa fa-th mr-2"></i> Grid
     </button>
     {/* <button
                 type="button"
