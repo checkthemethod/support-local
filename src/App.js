@@ -14,10 +14,11 @@ import {
 
 function App() {
   return (
-      <Router>
-        <div className="App container ">
-          <div className="row m-4">
-            <div className="col-md-12">
+    <Router>
+      <div className="App container ">
+        <div className="row m-4">
+          <div className="col-md-12">
+            <header>
               <Link to={"/all"}>
                 <h1 className="text-center">
                   Support L
@@ -27,38 +28,46 @@ function App() {
                   cal Businesses
                 </h1>
               </Link>
-            </div>
+            </header>
           </div>
-          <Route
-            exact
-            path={`/`}
-            render={(props) => <Redirect replace to={`/all`} />}
-          />
-
-          <Route exact path={`/all`} render={(props) => <ListView />} />
-
-          <Route
-            exact
-            path={`/neighborhood/:category`}
-            render={(props) => (
-              <SubListView {...props} currentFilter="neighborhood" />
-            )}
-          />
-          <Route
-            exact
-            path={`/cuisine/:category`}
-            render={(props) => (
-              <SubListView {...props} currentFilter="cuisine" />
-            )}
-          />
-
-          <Route
-            exact
-            path={`/category/:category/restaurant/:restaurantID`}
-            render={(props) => <DetailView />}
-          />
         </div>
-      </Router>
+        <Route
+          exact
+          path={`/`}
+          render={(props) => <Redirect replace to={`/all`} />}
+        />
+
+        <Route exact path={`/all`} render={(props) => <ListView />} />
+
+        <Route
+          exact
+          path={`/neighborhood/:category`}
+          render={(props) => (
+            <SubListView {...props} currentFilter="neighborhood" />
+          )}
+        />
+        <Route
+          exact
+          path={`/cuisine/:category`}
+          render={(props) => <SubListView {...props} currentFilter="cuisine" />}
+        />
+
+        <Route
+          exact
+          path={`/category/:category/restaurant/:restaurantID`}
+          render={(props) => <DetailView />}
+        />
+      </div>
+      <hr />
+      <footer className="text-center p-4">
+        Data compiled by and available{" "}
+        <a href="https://docs.google.com/spreadsheets/d/18w-0RBhwBBlXDN9kRV9DVSCAGSCjtHb9K0Pq2YBv18U/edit#gid=1779563054">
+          here
+        </a>
+        . Made with 🖤 &nbsp; by{" "}
+        <a href="https://richardsaethang.com">@checkthemethod</a>
+      </footer>
+    </Router>
   );
 }
 
