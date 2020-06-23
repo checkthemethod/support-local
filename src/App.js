@@ -19,7 +19,7 @@ function App() {
         <div className="row m-4">
           <div className="col-md-12">
             <header>
-              <Link to={"/all"}>
+              <Link to={"/"}>
                 <h1 className="text-center">
                   Support L
                   <span className="heart" role="img" aria-label="black-heart">
@@ -31,13 +31,9 @@ function App() {
             </header>
           </div>
         </div>
-        <Route
-          exact
-          path={`/`}
-          render={(props) => <Redirect replace to={`/all`} />}
-        />
 
-        <Route exact path={`/all`} render={(props) => <ListView />} />
+
+        <Route exact path={`/`} render={(props) => <ListView />} />
 
         <Route
           exact
