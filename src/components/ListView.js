@@ -81,8 +81,8 @@ class ListView extends React.Component {
             </div>
           </div>
         </div>
-        <div className="row p-4">
-          <div className="col-md-4">
+        <div className="row p-4 pb-4">
+          <div className="col-md-4 pb-4">
             <input
               type="text"
               name="search"
@@ -96,7 +96,7 @@ class ListView extends React.Component {
           </div>
         </div>
 
-        <div className="row p-4">
+        <div className="row p-4 pb-0">
           <div className="col-md-12">
             <h5>
               {toCapitalize(this.state.currentFilter)} (
@@ -104,7 +104,7 @@ class ListView extends React.Component {
             </h5>
           </div>
         </div>
-        <div className="p-4">{this.renderView(this.state.viewType)}</div>
+        <div className="pl-4 pt-0">{this.renderView(this.state.viewType)}</div>
       </div>
     );
   }
