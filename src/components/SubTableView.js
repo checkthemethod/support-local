@@ -12,7 +12,6 @@ const SubTableView = ({
         <tr>
           <th className="text-nowrap">Restaurant</th>
           <th className="text-nowrap">Neighborhood</th>
-          <th className="text-nowrap">Address</th>
           <th className="text-nowrap">Cuisine</th>
           <th className="text-nowrap">Service</th>
           <th className="text-nowrap">Instagram</th>
@@ -45,7 +44,6 @@ const SubTableView = ({
                 </a>
               </td>
               <td className="text-nowrap">{restaurant.neighborhood}</td>
-              <td className="text-nowrap">{restaurant.address}</td>
               <td className="text-nowrap">{restaurant.cuisine}</td>
               <td className="text-nowrap">{restaurant.service}</td>
               <td className="text-nowrap">{restaurant.instagram}</td>
