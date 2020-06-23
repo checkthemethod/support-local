@@ -135,7 +135,7 @@ export const restaurantData = [
          {
            title: "Post & Beam",
            neighborhood: "Baldwin Hills",
-           cuisine: "Soul food,",
+           cuisine: "Soul food",
            service: "Takeout, delivery",
            instagram: "@postandbeamla",
            phone: "(323) 299-5599",
@@ -242,7 +242,7 @@ export const restaurantData = [
          {
            title: "Lou, The French On The Block",
            neighborhood: "Burbank",
-           cuisine: "Patisserie, coffee,",
+           cuisine: "Patisserie, coffee shop",
            service: "Takeout",
            instagram: "@louthefrenchontheblock",
            phone: "(747) 241-8205",
@@ -250,7 +250,7 @@ export const restaurantData = [
          },
          {
            title: "JamaFo Jamaican Food Xpress",
-           neighborhood: "Canoga Park ",
+           neighborhood: "Canoga Park",
            cuisine: "Jamaican",
            service: "Takeout, delivery",
            instagram: "@jamafoxpress",
@@ -535,7 +535,7 @@ export const restaurantData = [
          },
          {
            title: "Kick Ass Vegans",
-           neighborhood: "Corona / Pop-Up",
+           neighborhood: "Corona, Pop-Up",
            cuisine: "Vegan/vegetarian",
            service: "Takeout",
            instagram: "@kickassvegans",
@@ -2204,7 +2204,7 @@ export const restaurantData = [
          },
          {
            title: "Simply D’Licious",
-           neighborhood: "Mid-CIty",
+           neighborhood: "Mid-City",
            cuisine: "Southern, Creole",
            service: "Takeout, Delivery",
            instagram: "@simplydliciousla",
@@ -2213,7 +2213,7 @@ export const restaurantData = [
          },
          {
            title: "Wi Jammin Cafe ",
-           neighborhood: "Mid-CIty",
+           neighborhood: "Mid-City",
            cuisine: "Jamaican",
            service: "Takeout, Delivery",
            instagram: "@wijammincarribean",
@@ -2750,7 +2750,7 @@ export const restaurantData = [
          {
            title: "LA Grind Coffee & Tea Bar",
            neighborhood: "Pop-Up (Truck)",
-           cuisine: "Coffee shops",
+           cuisine: "Coffee shop",
            service: "Takeout",
            instagram: "@lagrindcoffeeandteabar",
            phone: "(323) 475-7001",
@@ -3055,7 +3055,7 @@ export const restaurantData = [
          {
            title: "Coffee Del Mundo",
            neighborhood: "South LA",
-           cuisine: "Coffee shops",
+           cuisine: "Coffee shop",
            service: "Takeout, delivery",
            instagram: "@coffeedelmundola",
            phone: "(323) 455-0285",
