@@ -56,18 +56,38 @@ function App() {
       <footer className="text-center p-4">
         {" "}
         Data compiled by{" "}
-        <a href="https://www.instagram.com/prosciuttogirl69/" target="_blank">
+        <a
+          href="https://www.instagram.com/prosciuttogirl69/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           @prosciuttogirl69
         </a>{" "}
         and
-        <a href="https://www.instagram.com/prosciuttogirl69/" target="_blank">
+        <a
+          href="https://www.instagram.com/prosciuttogirl69/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           @taliamayden
-        </a> and available&nbsp;
-        <a href="https://docs.google.com/spreadsheets/d/18w-0RBhwBBlXDN9kRV9DVSCAGSCjtHb9K0Pq2YBv18U/edit#gid=1779563054">
+        </a>{" "}
+        and available&nbsp;
+        <a
+          href="https://docs.google.com/spreadsheets/d/18w-0RBhwBBlXDN9kRV9DVSCAGSCjtHb9K0Pq2YBv18U/edit#gid=1779563054"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           here
         </a>
-        .<br/> Made with 🖤 &nbsp; by{" "}
-        <a href="https://richardsaethang.com">@checkthemethod</a>.
+        .<br /> Made with 🖤 &nbsp; by{" "}
+        <a
+          href="https://richardsaethang.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @checkthemethod
+        </a>
+        .
       </footer>
     </Router>
   );
