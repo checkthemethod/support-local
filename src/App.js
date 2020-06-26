@@ -18,7 +18,7 @@ function App() {
       <div className="App container ">
         <div className="row m-4">
           <div className="col-md-12">
-            <header>
+            <div className="header">
               <Link to={"/"}>
                 <h1 className="text-center">
                   Support L
@@ -28,10 +28,9 @@ function App() {
                   cal Businesses
                 </h1>
               </Link>
-            </header>
+            </div>
           </div>
         </div>
-
 
         <Route exact path={`/`} render={(props) => <ListView />} />
 
@@ -54,14 +53,21 @@ function App() {
           render={(props) => <DetailView />}
         />
       </div>
-      <hr />
       <footer className="text-center p-4">
-        Data compiled by and available{" "}
+        {" "}
+        Data compiled by{" "}
+        <a href="https://www.instagram.com/prosciuttogirl69/" target="_blank">
+          @prosciuttogirl69
+        </a>{" "}
+        and
+        <a href="https://www.instagram.com/prosciuttogirl69/" target="_blank">
+          @taliamayden
+        </a> and available&nbsp;
         <a href="https://docs.google.com/spreadsheets/d/18w-0RBhwBBlXDN9kRV9DVSCAGSCjtHb9K0Pq2YBv18U/edit#gid=1779563054">
           here
         </a>
-        . Made with 🖤 &nbsp; by{" "}
-        <a href="https://richardsaethang.com">@checkthemethod</a>
+        .<br/> Made with 🖤 &nbsp; by{" "}
+        <a href="https://richardsaethang.com">@checkthemethod</a>.
       </footer>
     </Router>
   );
