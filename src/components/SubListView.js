@@ -4,6 +4,7 @@ import { toCapitalize } from "../helpers";
 import SubGridView from "./SubGridView";
 import SubTableView from "./SubTableView";
 import ButtonGroup from "./ButtonGroup";
+import { Link } from "react-router-dom";
 
 const getUniqueItemsByFilter = (arr, filterType) => {
   return [...new Set(arr.map((x) => x[filterType]))];
@@ -79,8 +80,8 @@ class SubListView extends React.Component {
         <div className="row pl-4 pb-0">
           <div className="col-md-12">
             <h5>
-              {toCapitalize(this.state.currentFilter)}:{" "}
-
+              <Link to={"/"}>{toCapitalize(this.state.currentFilter)}</Link>
+              &nbsp; >&nbsp;
               {toCapitalize(this.state.filterID)}
             </h5>
           </div>
